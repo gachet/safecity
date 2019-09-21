@@ -22,7 +22,7 @@ from sklearn import metrics
 from sklearn import svm
 
 #Read dataset and remove NA values
-report_1 = pd.read_csv('safecity_reports_07082019.csv')
+report_1 = pd.read_csv('datasets/safecity_reports_07082019.csv')
 report_1 = report_1[pd.notna(report_1['DESCRIPTION'])]
 
 #Check the number of rows without a location (value==NaN)
